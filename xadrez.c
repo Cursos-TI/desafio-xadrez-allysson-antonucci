@@ -6,7 +6,7 @@
 
 int main()
 {
-    // ---------- Início do desafio Tema 4: Novato ---------- //
+    // ---------- Início do desafio Tema 4: Aventureiro ---------- //
     
     // Movimentação da Torre usando a estrutura for (5 casas para a direita):
     
@@ -23,7 +23,7 @@ int main()
     printf("\nMovimentação do Bispo:\n");
     
     while(x < 5) {
-        printf("Cima, Direita\n");
+        printf("Cima, Direita\n"); // Imprime a direção do movimento
         x++;
     }
     
@@ -36,6 +36,22 @@ int main()
         printf("Esquerda\n");
         r++;
     } while (r < 8);
+    
+    // Movimentação do Cavalo usando loops alinhados (duas pra baixo e uma para esquerda):
+    
+    printf("\nMovimentação do Cavalo:\n");
+    
+    int movimentoCavalo = 1;
+    
+    while(movimentoCavalo--) { // Quando movimentoCavalo chega a 0, a condição do while se torna falsa, e o laço é interrompido 
+    
+        for(int i = 0; i < 2; i++){
+            printf("Baixo, ");
+        }
+        
+        printf("Esquerda\n");
+    }
 
     return 0;
 }
+
